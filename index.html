@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="glass">
+    <section class="hero">
+  <h1 class="nav-btn">Portfolio</h1>
+  <nav>
+    <a href="#about" class="neon"> About </a>
+    <a href="#projects" class="neon">Projects</a>
+    <a href="#contact" class="neon">Contact</a>
+  </nav>
+</section>
+  </header>
+
+  <main>
+    <section id="about" class="glass section">
+      <h2>About Me</h2>
+      <p>I’m a creative and fast-learning frontend developer who enjoys blending design and functionality to build sleek, interactive web experiences. With a strong focus on responsive layouts and modern aesthetics, I strive to craft websites that are visually engaging and user-friendly. My core skills include HTML, CSS, and JavaScript, and I’m always exploring new ways to improve my craft and deliver high-quality results.</p>
+    </section>
+
+    <section id="projects" class="glass section">
+      <h2>Projects</h2>
+      <div class="project-list">
+  <div class="project-card glass">
+    <img src="https://images.pexels.com/photos/6207736/pexels-photo-6207736.jpeg?w=800" alt="Project 1" />
+    <h3>PROJECT ONE</h3>
+    <p>A mini e-commerce website built entirely with HTML, CSS, and JavaScript, focusing on responsive UI, product listings, interactive filters, and a client-side cart. It demonstrates core frontend skills such as layout, styling, DOM manipulation, and basic state management without any frameworks or backend, highlighting clean code, accessibility, and mobile-first design.</p>
+    <a href="https://akdvlpr.github.io/Portfolio-website/" target="_blank">View Project</a>
+  </div>
+  <div class="project-card glass">
+    <img src="https://images.pexels.com/photos/7191162/pexels-photo-7191162.jpeg?w=800" alt="Project 2" />
+    <h3>PROJECT TWO</h3>
+    <p>A custom registration form built with HTML and CSS, designed for clean data entry and responsive layouts. It features semantic markup, labeled inputs, and accessible form states, with consistent styling for inputs, buttons, validation hints, and focus states. The form is front-end only, suitable for integration with any backend later, and emphasizes usability, mobile-first design, and maintainable CSS structure.</p>
+    <a href="https://akdvlpr.github.io/Registration-form/" target="_blank">View Project</a>
+  </div>
+  <!-- Add more project-card divs as needed -->
+</div>
+    </section>
+
+    <section id="contact" class="glass section">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/meolppzl" method="POST"> <input type="text" name="name" placeholder="Your Name" required /> <input type="email" name="email" placeholder="Your Email" required /> <textarea name="message" placeholder="Your Message" required></textarea> <button type="submit">Send</button> </form>
+    </section>
+  <div class="bg-wave"></div>
+  <canvas id="particles"></canvas>
+</main>
+<footer class="footer glass">
+  <p>© 2025 akdvlpr | All Rights Reserved</p>
+  <div class="social-links">
+    <a href="https://github.com/Akdvlpr" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/afnan-khan-460687380" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<!-- FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>

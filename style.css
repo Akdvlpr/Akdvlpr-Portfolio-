@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1, yellow);
+  color: white;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header, footer, .section {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 47, 0.9);
+  border: 1px solid rgba(173, 255, 47, 0.9);
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: greenyellow;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 8px;
+  background: greenyellow;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: greenyellow;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  border-radius: 16px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: greenyellow;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: greenyellow;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+  background: darkgreen;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(173, 255, 47, 0.9);
+}
+body {
+  margin: 0;
+  background: #1a1a2e;
+  overflow-x: hidden; /* allows vertical scroll */
+}
+
+.bg-wave {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, lightgreen, yellow, Green, darkgreen);
+  animation: rotate 20s linear infinite;
+  filter: blur(100px);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* behind content */
+  pointer-events: none; /* doesn't block clicks */
+  background: transparent; /* Important */
+}
+main, header, footer, section {
+  position: relative;
+  z-index: 1;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 1deg, lightgreen, yellow, Green, darkgreen);
+  animation: rotate 20s linear infinite;
+  filter: blur(100px);
+  opacity: 0.35;
+  z-index: -2; /* Push behind particles */
+}
+header {
+  position: relative;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: springgreen; /* Neon accent */
+}
+nav a {
+  position: relative;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, yellow, greenyellow);
+  transition: width 0.4s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
+header nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 6px;
+  background: rgba(173, 255, 47, 0.1); /* Glass effect */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(173, 255, 47, 0.6);
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  background: rgba(173, 255, 47, 0.6); /* Pink glow on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(173, 255, 47, 0.9);
+}
+h1 {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+h1:hover {
+  background: linear-gradient(135deg, yellow, greenyellow);
+  box-shadow: 0 4px 20px rgba(0, 201, 255, 0.4);
+  transform: translateY(-3px) scale(1.05);
+}
+.hero {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center horizontally */
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem; /* Space between heading and nav */
+}
+.hero nav {
+  display: flex;
+  flex-wrap: wrap;     /* ✅ allows buttons to wrap */
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.hero nav a {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(173, 255, 47, 0.9);
+}
+.project-card img:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+  transition: 0.4s ease;
+}
+.footer {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 13px;
+  border: 2px solid rgba(173, 255, 47, 0.9);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+.footer .social-links {
+  margin-top: 10px;
+}
+
+.footer .social-links a {
+  margin: 0 8px;
+  font-size: 22px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: greenyellow; /* matches your theme */
+  text-shadow: 0 0 8px greenyellow;
+}
+.project-card img {
+  border: 2px solid rgba(173, 255, 47, 0.9);
+  border-radius: 12px;
+  padding: 2px;
+  transition: all 0.3s ease;
+}
+
+.project-card img:hover {
+  border-color: greenyellow;
+  transform: scale(1.03);
+}
+.nav-btn {
+  background: linear-gradient(135deg, #00c853, #ffeb3b); /* green → yellow */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover: Lift + Glow */
+.nav-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 200, 83, 0.6), 
+              0 4px 15px rgba(255, 235, 59, 0.5);
+}
+.neon {
+  background: linear-gradient(90deg, #00c853, #aeea00, #ffeb3b); /* vivid green → lime → yellow */
+  color: #000; /* black text for contrast */
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background-size: 200% 200%;   /* for animated shine */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover effect: animated gradient + glow */
+.neon:hover {
+  transform: translateY(-4px) scale(1.05);
+  background-position: right center;  /* shine movement */
+  box-shadow: 0 8px 25px rgba(0, 200, 83, 0.6),
+              0 4px 15px rgba(255, 235, 59, 0.6);
+}
